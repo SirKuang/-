@@ -1,0 +1,17 @@
+DEBUG main org.apache.hadoop.hbase.ipc.AbstractRpcClient - Codec=org.apache.hadoop.hbase.codec.KeyValueCodec@645aa696, compressor=null, tcpKeepAlive=true, tcpNoDelay=true, connectTO=10000, readTO=20000, writeTO=60000, minIdleTimeBeforeClose=120000, maxRetries=0, fallbackAllowed=false, bind address=null
+DEBUG main-SendThread(slave3:2181) org.apache.zookeeper.ClientCnxn - Reading reply sessionid:0x485342633ea0001, packet:: clientPath:null serverPath:null finished:false header:: 3,8  replyHeader:: 3,77309411440,0  request:: '/hbase,F  response:: v{'replication,'meta-region-server,'rs,'splitWAL,'backup-masters,'table-lock,'flush-table-proc,'region-in-transition,'online-snapshot,'acl,'master,'running,'recovering-regions,'draining,'namespace,'hbaseid,'table} 
+DEBUG main-SendThread(slave3:2181) org.apache.zookeeper.ClientCnxn - Reading reply sessionid:0x485342633ea0001, packet:: clientPath:null serverPath:null finished:false header:: 4,4  replyHeader:: 4,77309411440,0  request:: '/hbase/meta-region-server,F  response:: #ffffffff0001a726567696f6e7365727665723a31363032305373fffffffcffffffcfffffff9cffffffca4b4c50425546a12a66d617374657210ffffff947d18ffffff89ffffffeeffffff9affffffa1ffffffd330100183,s{77309411380,77309411380,1671617257934,1671617257934,0,0,0,0,59,0,77309411380} 
+DEBUG hconnection-0x31f924f5-metaLookup-shared--pool2-t1 org.apache.hadoop.hbase.ipc.AbstractRpcClient - Use SIMPLE authentication for service ClientService, sasl=false
+DEBUG hconnection-0x31f924f5-metaLookup-shared--pool2-t1 org.apache.hadoop.hbase.ipc.AbstractRpcClient - Connecting to master/100.64.0.19:16020
+INFO main org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation - Closing zookeeper sessionid=0x485342633ea0001
+DEBUG main org.apache.zookeeper.ZooKeeper - Closing session: 0x485342633ea0001
+DEBUG main org.apache.zookeeper.ClientCnxn - Closing client for session: 0x485342633ea0001
+DEBUG main-SendThread(slave3:2181) org.apache.zookeeper.ClientCnxn - Reading reply sessionid:0x485342633ea0001, packet:: clientPath:null serverPath:null finished:false header:: 5,-11  replyHeader:: 5,77309411441,0  request:: null response:: null
+DEBUG main org.apache.zookeeper.ClientCnxn - Disconnecting client for session: 0x485342633ea0001
+INFO main org.apache.zookeeper.ZooKeeper - Session: 0x485342633ea0001 closed
+INFO main-EventThread org.apache.zookeeper.ClientCnxn - EventThread shut down
+DEBUG main org.apache.hadoop.hbase.ipc.AbstractRpcClient - Stopping rpc client
+DEBUG Thread-2 org.apache.hadoop.ipc.Client - stopping client from cache: org.apache.hadoop.ipc.Client@795cd85e
+DEBUG Thread-2 org.apache.hadoop.ipc.Client - removing client from cache: org.apache.hadoop.ipc.Client@795cd85e
+DEBUG Thread-2 org.apache.hadoop.ipc.Client - stopping actual client because no more references remain: org.apache.hadoop.ipc.Client@795cd85e
+DEBUG Thread-2 org.apache.hadoop.ipc.Client - Stopping client
